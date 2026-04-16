@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/Al%C3%AA%20(3)%20(3)%20(1).png">
+    
+    <title>ALEXIA MELUSINE | ALMAS DE POMBAGIRA</title>
+    <meta name="description" content="Direção de arte visceral e o arquétipo do feminino proibido. Não é apenas um link, é um rito de passagem. Toque e desça ao Vortex. Laroyê.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pombagiras.github.io/melusine-oficial/">
+    <meta property="og:title" content="ALEXIA MELUSINE | ALMAS DE POMBAGIRA">
+    <meta property="og:description" content="Direção de arte visceral e o arquétipo do feminino proibido. Não é apenas um rito de passagem. Laroyê.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Ale%20Ultra%20(1).png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        :root {
+            --roxo-vortex: #1a012a;
+            --roxo-brilho: rgba(121, 5, 201, 0.6);
+            --sangue: #8b0000;
+            --abismo: #050505;
+            --vidro: rgba(255, 255, 255, 0.03);
+            --borda: rgba(255, 255, 255, 0.08);
+            --icone-cor: rgba(255, 255, 255, 0.7);
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; margin: 0; padding: 0; }
+
+        body {
+            background: var(--abismo);
+            background-image: radial-gradient(circle at center, rgba(139, 0, 0, 0.15) 0%, transparent 75%),
+                             url('https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Cavpa%20(4).jpeg');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            font-family: 'Montserrat', sans-serif;
+            color: white; display: flex; justify-content: center; min-height: 100vh;
+        }
+
+        .vortex-wrapper { width: 100%; max-width: 450px; padding: 20px; }
+
+        .profile-header { text-align: center; padding: 40px 0 20px; }
+        .profile-img { 
+            width: 115px; height: 115px; border-radius: 50%; 
+            border: 2px solid var(--roxo-vortex); 
+            box-shadow: 0 0 25px var(--roxo-brilho); 
+            object-fit: cover; display: inline-block;
+        }
+
+        .profile-header h1 { font-size: 1.6rem; letter-spacing: 3px; text-transform: uppercase; margin-top: 10px; font-weight: 800; }
+        .profile-header p { color: var(--sangue); font-size: 0.8rem; font-weight: bold; margin-top: 5px; letter-spacing: 1px; }
+
+        .bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 12px; }
+
+        .bento-item {
+            background: var(--vidro); backdrop-filter: blur(15px);
+            border: 1px solid var(--borda); border-radius: 24px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-decoration: none; color: white; transition: 0.3s ease;
+            padding: 20px; text-align: center;
+        }
+
+        .bento-item:hover { transform: translateY(-3px); border-color: var(--roxo-vortex); box-shadow: 0 5px 15px rgba(121, 5, 201, 0.2); }
+
+        .featured { grid-column: span 2; border-color: var(--roxo-vortex); background: rgba(26, 1, 42, 0.1); padding: 30px; }
+        .shape-organic { border-radius: 40px 15px 40px 15px; }
+        .shape-round { border-radius: 30px; }
+
+        .accordion-item { background: var(--vidro); backdrop-filter: blur(10px); border: 1px solid var(--borda); border-radius: 20px; margin-bottom: 10px; overflow: hidden; }
+        .accordion-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background: rgba(0,0,0,0.3); }
+        .accordion-item.active .accordion-content { max-height: 800px; }
+
+        .inner-link { display: block; padding: 15px 20px; color: rgba(255,255,255,0.6); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; text-transform: uppercase; font-weight: 600; }
+        .inner-link:hover { background: rgba(121, 5, 201, 0.1); color: white; }
+
+        .icon-svg { width: 30px; height: 30px; fill: var(--icone-cor); margin-bottom: 10px; }
+        .trans-btn { background: linear-gradient(135deg, #a0d8f1 0%, #f1a0d8 100%); color: black !important; font-weight: 800; border-radius: 12px; margin: 15px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="vortex-wrapper">
+    <header class="profile-header">
+        <img src="https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Ale%20Reds%20(3).png" class="profile-img" alt="Alexia Melusine">
+        <h1>ALEXIA MELUSINE</h1>
+        <p>"O medo é uma cela que eu abro por dentro."</p>
+    </header>
+
+    <div class="bento-grid">
+        <a href="https://bio.site/AlmasdePombagira" class="bento-item featured shape-round" onclick="vibrate()">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <span>PORTAL ALMAS DE POMBAGIRA</span>
+        </a>
+
+        <a href="https://whatsapp.com/channel/0029VbBs2AnJkK7J9J0nLr2G" class="bento-item shape-organic" onclick="vibrate()">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.91-9.91-9.91z"/></svg>
+            <span>WHATSAPP</span>
+        </a>
+
+        <a href="https://t.me/pomba_giras" class="bento-item shape-organic" onclick="vibrate()">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.12 7.14-.14.72-.41.96-.66.98-.56.05-1-.38-1.54-.74-.84-.57-1.32-.92-2.14-1.46-.94-.63-.33-.98.21-1.53.14-.14 2.56-2.34 2.61-2.55.01-.03.01-.13-.05-.18-.06-.06-.16-.04-.23-.02-.1.02-1.69 1.07-4.77 3.14-.45.31-.86.46-1.23.45-.4 0-1.18-.22-1.76-.41-.71-.23-1.27-.35-1.22-.75.02-.21.32-.42.89-.64 3.48-1.51 5.8-2.52 6.96-3.01 3.32-1.4 4.01-1.64 4.46-1.65.1 0 .32.02.46.14.12.1.16.23.18.33.01.07.02.2.01.31z"/></svg>
+            <span>TELEGRAM</span>
+        </a>
+
+        <a href="https://www.youtube.com/@almasdepombagira" class="bento-item shape-round" onclick="vibrate()">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09v1.68c0 .6-.03 1.29-.1 2.09-.06.8-.15 1.43-.28 1.9-.17.6-.51 1.05-.99 1.35-.48.3-.98.41-1.5.34-1.07-.15-2.2-.26-3.41-.34-1.21-.08-2.39-.12-3.53-.12s-2.32.04-3.53.12c-1.21.08-2.34.19-3.41.34-.52.07-1.02-.04-1.5-.34-.48-.3-.82-.75-.99-1.35-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09V11.1c0-.6.03-1.29.1-2.09.06-.8.15-1.43.28-1.9.17-.6.51-1.05.99-1.35.48-.3.98-.41 1.5-.34 1.07.15 2.2.26 3.41.34 1.21.08 2.39.12 3.53.12s2.32-.04 3.53-.12c1.21-.08 2.34-.19 3.41-.34.52-.07 1.02.04 1.5.34.48.3.82.75.99 1.35z"/></svg>
+            <span>YOUTUBE</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@almasdepombagira?lang=pt-BR" class="bento-item shape-round" onclick="vibrate()">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.01-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92 0 5.84-.02 8.75-.03 1.7-.54 3.41-1.62 4.77-1.08 1.36-2.71 2.22-4.42 2.31-1.71.09-3.48-.28-4.9-1.22-1.42-.94-2.45-2.48-2.69-4.14-.24-1.66.19-3.41 1.25-4.75 1.06-1.34 2.63-2.18 4.29-2.3.02 1.31.01 2.62.02 3.93-1.05.02-2.13.39-2.9 1.1-.77.71-1.16 1.83-1.03 2.86.13 1.03.88 1.95 1.83 2.32.95.37 2.1.25 2.94-.35.84-.6 1.3-1.66 1.19-2.68.01-4.04-.01-8.08.01-12.12-.02 0-.01 0-.01-.02z"/></svg>
+            <span>TIKTOK</span>
+        </a>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this); vibrate()">REDE SOCIAIS <span>+</span></div>
+            <div class="accordion-content">
+                <a href="https://www.instagram.com/almasdepombagira/" class="inner-link">Instagram</a>
+                <a href="https://www.threads.com/@almasdepombagira" class="inner-link">Threads</a>
+                <a href="https://www.kwai.com/@AlexiaRosadeFogo" class="inner-link">Kwai</a>
+                <a href="https://discord.gg/gWZP8R7Dqu" class="inner-link">Discord Hub</a>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this); vibrate()">CONTEÚDO & PODCAST <span>+</span></div>
+            <div class="accordion-content">
+                <a href="https://open.spotify.com/show/0oeCL1QScD3v7dHeUvJjgJ" class="inner-link">Spotify Podcast</a>
+                <a href="https://substack.com/@alexiamelusine" class="inner-link">Substack (Artigos)</a>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this); vibrate()">DESENVOLVIMENTO & GITHUB <span>+</span></div>
+            <div class="accordion-content">
+                <a href="https://github.com/pombagiras" class="inner-link">GitHub Pombagiras</a>
+                <a href="https://github.com/alexialuzdeferro" class="inner-link">GitHub Luz de Ferro</a>
+                <a href="https://github.com/Orgulho-Trans" class="inner-link trans-btn">ORGULHO TRANS</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function vibrate() { if (navigator.vibrate) navigator.vibrate(15); }
+    function toggleAccordion(el) {
+        const item = el.parentElement;
+        item.classList.toggle('active');
+        el.querySelector('span').innerText = item.classList.contains('active') ? '-' : '+';
+    }
+</script>
+</body>
+</html>
